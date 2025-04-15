@@ -6,7 +6,7 @@ const HomeSection = () => {
       <div className="container mx-auto px-4 text-center bg-black bg-opacity-50 p-8 rounded">
         <h1 className="text-4xl md:text-6xl font-bold text-white">Nahuel Bello</h1>
         <p className="text-xl md:text-2xl text-white mt-4">
-          Frontend Developer | Passionate about creating interactive web experiences
+          Software Developer | Passionate about creating interactive web experiences
         </p>
         <div className="mt-8">
           <Link href="contact">
