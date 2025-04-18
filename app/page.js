@@ -1,32 +1,27 @@
-import Header from "@/src/components/Header";
 import Footer from "@/src/components/Footer";
-import ExperienceSection from "@/src/components/ExperienceSection";
+import Experience from "@/src/components/Experience";
 import AboutSection from "@/src/components/AboutSection";
-import ContactSection from "@/src/components/ContactSection";
+import Contact from "@/src/components/Contact";
 import HomeSection from "@/src/components/HomeSection";
-import ProjectsSection from "@/src/components/ProjectsSection";
-import SkillsSection from "@/src/components/SkillsSection";
+import Education from "@/src/components/Education";
+import Skills from "@/src/components/Skills";
 
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen bg-gray-100">
-      <Header />
-      <main className="flex-grow container mx-auto px-4 py-8">
-        <h1 className="text-4xl font-bold text-center text-blue-600 mb-6">
-          Mi Currículum Vitae
-        </h1>
+      <main className="flex-grow container mx-auto px-8 py-8">
           {/* Sección inicial */}
           <HomeSection />
           {/* Sobre mí */}
           <AboutSection />
-          {/* Experiencia */}
-          <ExperienceSection />
-          {/* Proyectos */}
-          <ProjectsSection />
           {/* Habilidades */}
-          <SkillsSection />
+          <Skills />
+          {/* Experiencia */}
+          <Experience />
+          {/* Education */}
+          <Education />
           {/* Contacto */}
-          <ContactSection />
+          <Contact />
       </main>
       <Footer />
     </div>

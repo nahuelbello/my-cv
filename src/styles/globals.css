@@ -2,6 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+/* globals.css  – después de las directivas @tailwind base/components/utilities */
+@layer base {
+  /* Todos los headings usan Instrument Sans SemiBold */
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-title font-semibold transition-[font-variation-settings] duration-200;
+  }
+  h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover {
+    font-variation-settings: 'wght' 700;
+  }
+
+  /* Cuerpo de texto y listas en Plus Jakarta Sans */
+  body, p, li { @apply font-body; }
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -23,7 +37,6 @@ body {
 body {
   color: var(--foreground);
   background: var(--background);
-  @apply font-sans;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

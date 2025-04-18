@@ -1,6 +1,7 @@
 import Link from 'next/link'
+import Script from 'next/script'
 
-const ContactSection = () => {
+const Contact = () => {
   return (
     <section id="contact" className="py-16">
       <div className="container mx-auto px-4 text-center">
@@ -11,8 +12,14 @@ const ContactSection = () => {
         </p>
         {/* Aquí podrías agregar un formulario de contacto si lo deseas */}
       </div>
+        <Script
+          src="https://cdn.botpress.cloud/webchat/v0/inject.js"
+          data-bot-id={process.env.NEXT_PUBLIC_BOTPRESS_ID}
+          data-host-url="https://cdn.botpress.cloud/webchat/v0"
+          async
+        />
     </section>
   )
 }
 
-export default ContactSection;
+export default Contact;

@@ -1,23 +1,72 @@
-import Link from 'next/link'
+import React from 'react'
 
 const HomeSection = () => {
   return (
-    <section id="home" className="relative bg-hero-pattern bg-cover bg-center py-20">
-      <div className="container mx-auto px-4 text-center bg-black bg-opacity-50 p-8 rounded">
-        <h1 className="text-4xl md:text-6xl font-bold text-white">Nahuel Bello</h1>
-        <p className="text-xl md:text-2xl text-white mt-4">
-          Software Developer | Passionate about creating interactive web experiences
-        </p>
-        <div className="mt-8">
-          <Link href="contact">
-            <h2 className="bg-primary text-white py-2 px-6 rounded hover:bg-secondary transition-colors duration-300">
-              Get in Touch
-            </h2>
-          </Link>
+    <section
+      id="home"
+      className="relative bg-sky-50 py-20"
+    >
+      {/* Contenedor principal en flex */}
+      <div className="container mx-auto px-4 flex flex-col md:flex-row items-center gap-12">
+        
+        {/* Columna 1: Imagen */}
+        <div className="md:w-1/2 w-full flex ml-6 justify-center">
+          <img
+            src="/cv-picture.jpg" 
+            alt="My Photo"
+            className="rounded-lg w-72 h-88 object-cover shadow-lg"
+          />
+        </div>
+
+        {/* Columna 2: Texto (el que ya tenías) */}
+        <div className="w-full bg-white bg-opacity-80 dark:bg-gray-800 dark:bg-opacity-80 p-10 mr-12 rounded-xl text-center md:text-left shadow-lg md:col-start-2">
+          <h1 className="text-4xl md:text-7xl font-bold text-gray-900 dark:text-white">
+            Nahuel Bello
+          </h1>
+          <h2 className="text-xl md:text-3xl text-gray-700 dark:text-gray-300 mt-4">
+            Software Developer
+          </h2>
+          <p className="text-lg md:text-xl text-gray-700 dark:text-gray-300 mt-4">
+          Tu meta de negocio, mi desafío. Dejame ayudarte a construir soluciones front-end que marquen la diferencia
+          </p>
+          <div className="ml-80 mt-8 flex justify-center md:justify-start items-center gap-4">
+            <a
+              href="mailto:contact@nahuelbello.com"
+              className="rounded-full bg-white bg-opacity-20 hover:bg-opacity-30 p-2 transition"
+            >
+              <img
+                src="mail-logo.png"
+                alt="Apple Mail"
+                className="w-8 h-8 object-contain"
+              />
+            </a>
+            <a
+              href="https://github.com/nahuelbello"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-full bg-white bg-opacity-20 hover:bg-opacity-30 p-2 transition"
+            >
+              <img
+                src="github-logo.png"
+                alt="GitHub Profile"
+                className="w-13 h-11 object-contain"
+              />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/nahuelbello/?trk=public-profile-badge-profile-badge-view-profile-cta"
+              className="w-24 h-24 md:w-28 md:h-26 flex items-center justify-center rounded-full bg-white bg-opacity-20 hover:bg-opacity-30 transition"
+            >
+              <img
+                src="linkedin-logo.png"
+                alt="LinkedIn Profile"
+                className="w-full h-full object-contain"
+              />
+            </a>
+          </div>
         </div>
       </div>
     </section>
   )
 }
 
-export default HomeSection;
+export default HomeSection
