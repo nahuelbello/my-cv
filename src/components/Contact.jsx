@@ -59,6 +59,17 @@ export default function Contact() {
         src="https://files.bpcontent.cloud/2025/04/18/05/20250418052418-WRCE9I45.js"
         strategy="lazyOnload"
       />
+      <Script id="botpress-init" strategy="lazyOnload">
+        {`
+          if (window.botpressWebChat) {
+            window.botpressWebChat.init({
+              host: 'https://cdn.botpress.cloud/webchat/v2.3',
+              botId: 'WRCE9I45',
+              container: '#botpress-webchat'
+            });
+          }
+        `}
+      </Script>
     </section>
   )
 }
