@@ -1,16 +1,22 @@
-import LinkedInBadge from "@/src/components/LinkedInBadge";
+'use client'
+
+import dynamic from 'next/dynamic';
+const LinkedInBadge = dynamic(
+  () => import('@/src/components/LinkedInBadge'),
+  { ssr: false }
+);
 
 const Skills = () => (
   <section id="skills" className="py-20">
     {/* Card wrapper */}
     <div className="bg-white rounded-xl shadow-lg p-8 md:grid md:grid-cols-3 gap-10 items-start">
-{/* Badge column */}
-<div className="flex justify-center md:justify-start">
-  {/* Escala ligera en móvil, un poco mayor en desktop */}
-  <div className="transform scale-[1.05] md:scale-[1.1] origin-top-left">
-    <LinkedInBadge />
-  </div>
-</div>
+    {/* Badge column */}
+    <div className="flex justify-center md:justify-start">
+      {/* Escala ligera en móvil, un poco mayor en desktop */}
+      <div className="transform scale-[1.05] md:scale-[1.1] origin-top-left">
+        <LinkedInBadge />
+      </div>
+    </div>
 
       {/* Content column */}
       <div className="md:col-span-2 space-y-5">
