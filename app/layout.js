@@ -6,14 +6,14 @@ import { Analytics } from '@vercel/analytics/react'
 
 const instrument = Instrument_Sans({
   subsets: ['latin'],
-  weight: ['600'],          // Solo SemiBold → ahorro de peso
+  weight: ['600','700'],          // Only SemiBold to save bundle size
   variable: '--font-title',
   display: 'swap',
 })
 
 const jakarta = Plus_Jakarta_Sans({
   subsets: ['latin'],
-  weight: ['400', '500'],   // Regular y Medium
+  weight: ['400', '500'],   // Regular and Medium
   variable: '--font-body',
   display: 'swap',
 })
@@ -30,13 +30,13 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: 'Nahuel Bello',
-  description: 'My cv as a software developer',
+  description: 'My CV as a Software Developer',
 }
 
 export default function RootLayout({ children }) {
   return (
     <html
-      lang="es"
+      lang="en"
       className={`
         ${instrument.variable}
         ${jakarta.variable}
@@ -44,7 +44,7 @@ export default function RootLayout({ children }) {
         ${geistMono.variable}
       `}
     >
-      {/* ———— OBLIGATORIO para Next.js App Router ———— */}
+      {/* Required by Next.js App Router */}
       <head />
       <body className="bg-gray-100 text-black">
         {children}

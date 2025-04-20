@@ -7,18 +7,16 @@ const LinkedInBadge = dynamic(
 );
 
 const Skills = () => (
-  <section id="skills" className="py-20">
-    {/* Card wrapper */}
-    <div className="bg-white rounded-xl shadow-lg p-8 md:grid md:grid-cols-3 gap-10 items-start">
-    {/* Badge column */}
-    <div className="flex justify-center md:justify-start">
-      {/* Escala ligera en móvil, un poco mayor en desktop */}
-      <div className="transform scale-[1.05] md:scale-[1.1] origin-top-left">
-        <LinkedInBadge />
+  <section id="skills" className="py-40 bg-gray-50">
+    <div className="container mx-auto px-4">
+      <article className="bg-white rounded-xl shadow-lg p-8 md:grid md:grid-cols-3 gap-10 items-start">
+      <div className="flex justify-center md:justify-start">
+        {/* Slight scale effect: 1.05 on mobile, 1.1 on desktop */}
+        <div className="transform scale-[0.8] md:scale-[1.1] origin-top-left -mt-4 md:-mt-6 -mx-1">
+          <LinkedInBadge />
+        </div>
       </div>
-    </div>
 
-      {/* Content column */}
       <div className="md:col-span-2 space-y-5">
         <h2 className="text-3xl font-title font-semibold">Skills</h2>
 
@@ -32,12 +30,12 @@ const Skills = () => (
           among others.
         </p>
         <p>
-          Además, como herramientas adicionales aunque más básicas, tengo
-          experiencia trabajando con la terminal en entornos como Linux y macOS,
-          servidores como Hostinger o VPS como Oracle y Cloudflare, y creando
-          diseños de UI/UX con Figma y Canva.
+          Additionally, I have experience using command-line environments like Linux and macOS,
+          working with hosting providers such as Hostinger or VPS services like Oracle and Cloudflare,
+          and creating UI/UX designs with tools like Figma and Canva.
         </p>
       </div>
+      </article>
     </div>
   </section>
 );

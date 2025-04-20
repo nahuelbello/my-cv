@@ -1,0 +1,22 @@
+{
+  "name": "Nahuel Bello Portfolio",
+  "short_name": "NahuelBello",
+  "description": "Nahuel Bello's personal portfolio showcasing skills, experience, and live chat contact.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#e3f6fd",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

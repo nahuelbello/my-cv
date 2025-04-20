@@ -2,23 +2,45 @@
 @tailwind components;
 @tailwind utilities;
 
-/* globals.css  – después de las directivas @tailwind base/components/utilities */
+/* globals.css – after @tailwind base/components/utilities directives */
 @layer base {
-  /* Todos los headings usan Instrument Sans SemiBold */
+  /* Animate weight axis for all headings */
   h1, h2, h3, h4, h5, h6 {
-    @apply font-title font-semibold transition-[font-variation-settings] duration-200;
+    @apply font-title;
+    /* Set initial variable font weight */
+    font-variation-settings: 'wght' 600;
+    /* Transition weight axis smoothly */
+    transition: font-variation-settings 200ms ease-in-out;
   }
-  h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover {
+  /* On hover, increase weight for all headings */
+  h1:hover {
     font-variation-settings: 'wght' 700;
   }
 
-  /* Cuerpo de texto y listas en Plus Jakarta Sans */
+  /* Body text and lists in Plus Jakarta Sans */
   body, p, li { @apply font-body; }
 }
 
 :root {
-  --background: #ffffff;
+  --background: #5f3e3e;
   --foreground: #171717;
+}
+
+/* At end of src/styles/globals.css */
+a img {
+  transition: transform 200ms ease-in-out;
+}
+a:hover img {
+  transform: scale(1.05);
+}
+
+/* Animate all link text on hover */
+a {
+  transition: transform 200ms ease-in-out;
+  display: inline-block;
+}
+a:hover {
+  transform: scale(1.05);
 }
 
 @media (prefers-color-scheme: dark) {

@@ -5,9 +5,9 @@ import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { oneDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 /**
- * Muestra el contenido de un archivo de GitHub.
- * @param {string} fileUrl - URL estilo
- *   https://github.com/user/repo/blob/branch/ruta/archivo.js
+ * Displays the content of a GitHub file.
+ * @param {string} fileUrl - A GitHub URL in the form
+ *   https://github.com/user/repo/blob/branch/path/to/file.ext
  */
 const GitHubEmbed = ({ fileUrl }) => {
   const [code, setCode] = useState('');
@@ -16,21 +16,21 @@ const GitHubEmbed = ({ fileUrl }) => {
   useEffect(() => {
     if (!fileUrl) return;
 
-    // 1) Pasamos de github.com/.../blob/ a raw.githubusercontent.com/...
+    // Convert blob URL to raw URL
     const rawUrl = fileUrl
       .replace('https://github.com/', 'https://raw.githubusercontent.com/')
       .replace('/blob/', '/');
 
-    // 2) Deducimos lenguaje por la extensión
+    // Determine language from file extension
     const ext = rawUrl.split('.').pop();
     const map = { js: 'javascript', jsx: 'jsx', ts: 'typescript', py: 'python', sol: 'solidity' };
     setLang(map[ext] || 'text');
 
-    // 3) Descargamos el archivo
+    // Fetch the file contents
     fetch(rawUrl)
       .then(res => res.text())
       .then(setCode)
-      .catch(console.error);
+      .catch(error => console.error('Error loading GitHub file:', error));
   }, [fileUrl]);
 
   return (
@@ -42,7 +42,7 @@ const GitHubEmbed = ({ fileUrl }) => {
         wrapLongLines
         showLineNumbers
       >
-        {code || '// Cargando…'}
+        {code || '// Loading…'}
       </SyntaxHighlighter>
     </div>
   );

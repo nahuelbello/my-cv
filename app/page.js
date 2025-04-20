@@ -8,19 +8,13 @@ import Skills from "@/src/components/Skills";
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen bg-gray-100">
+    <div className="flex flex-col min-h-screen bg-sky-200">
       <main className="flex-grow container mx-auto px-8 py-8">
-          {/* Sección inicial */}
           <HomeSection />
-          {/* Sobre mí */}
           <AboutSection />
-          {/* Habilidades */}
           <Skills />
-          {/* Experiencia */}
           <Experience />
-          {/* Education */}
           <Education />
-          {/* Contacto */}
           <Contact />
       </main>
       <Footer />

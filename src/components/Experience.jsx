@@ -3,24 +3,20 @@ import GitHubEmbed from '@/src/components/GitHubEmbed';
 
 const Experience = () => {
   return (
-    <section id="experience" className="py-12 bg-gray-50 dark:bg-gray-800">
+    <section id="experience" className="py-6 bg-gray-50 dark:bg-gray-800">
       <div className="container mx-auto px-4">
-        {/* Card wrapper */}
-        <div className="bg-white dark:bg-gray-900 rounded-xl shadow-lg p-10 space-y-10">
-          {/* Heading */}
+      <article className="bg-white dark:bg-gray-900 rounded-xl shadow-lg p-10 space-y-10">
           <h2 className="text-3xl font-title font-semibold text-gray-900 dark:text-gray-100">
             Experience
           </h2>
 
-          {/* Intro */}
           <p className="text-gray-700 dark:text-gray-300">
-            He trabajado en varios proyectos como freelancer y personales, incluyendo web apps, scripts de Python, automatizaciones, limpieza de datos y dApps en blockchain. Como mi ultimo proyecto
-            personal Message Auction, that is an Ethereum dApp where you can showcase your message while earning ETH rewards
+            I’ve worked on various freelance and personal projects, including web apps, Python scripts, automations, data cleaning, and blockchain dApps. My latest personal project, Message Auction, is an
+            Ethereum dApp where you can showcase your message while earning ETH rewards.
           </p>
 
-          {/* Featured project iframe */}
-          <div className="flex justify-center mb-12">
-            <article className="w-full shadow-inner rounded-lg overflow-hidden">
+          <figure className="flex justify-center mb-12">
+            <div className="w-full shadow-inner rounded-lg overflow-hidden">
               <iframe
                 src="https://messageauction.com/"
                 title="Message Auction Embed"
@@ -29,11 +25,11 @@ const Experience = () => {
                 className="w-full h-auto md:h-[500px] block"
                 loading="lazy"
               />
-            </article>
-          </div>
+            </div>
+            <figcaption className="sr-only">Live preview of Message Auction Ethereum dApp</figcaption>
+          </figure>
 
-          {/* Code snippet and button */}
-          <div className="space-y-4">
+          <aside className="space-y-4">
             <div className="rounded-lg overflow-auto bg-gray-100 dark:bg-gray-800 p-6">
               <GitHubEmbed
                 fileUrl="https://github.com/nahuelbello/message_auction/blob/main/index.html"
@@ -46,10 +42,10 @@ const Experience = () => {
               rel="noopener noreferrer"
               className="inline-block px-6 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition"
             >
-              Ver repositorio completo
+              View Full Repository
             </a>
-          </div>
-        </div>
+          </aside>
+        </article>
       </div>
     </section>
   )
