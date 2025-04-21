@@ -70,19 +70,24 @@ a {
   }
   h1 {
     font-size: 2rem;
+    text-align: center;
   }
   h2 {
     font-size: 1.5rem;
+    text-align: center;
   }
   h3 {
     font-size: 1.25rem;
+    text-align: center;
   }
   h4, h5, h6 {
     font-size: 1rem;
+    text-align: center;
   }
   p, li {
     line-height: 1.6;
     margin-bottom: 1rem;
+    text-align: center;
   }
   img, embed {
     max-width: 100%;
@@ -94,5 +99,24 @@ a {
   }
   section > .container {
     flex-direction: column;
+  }
+
+}
+
+@media (prefers-color-scheme: dark) {
+  body, p, li,  h1, h2, h3, h4, h5, h6 {
+    color: white;
+  }
+
+  section {
+    background: #e0f2fe; /* sky-200 */
+  }
+
+  .bg-white {
+    background: rgba(255, 255, 255, 0.8); /* dark overlay */
+  }
+
+  p {
+    background: transparent;
   }
 }

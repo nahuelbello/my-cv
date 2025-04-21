@@ -7,9 +7,9 @@ const LinkedInBadge = dynamic(
 );
 
 const Skills = () => (
-  <section id="skills" className="py-40 bg-gray-50">
+  <section id="skills" className="py-40 bg-gray-50 dark:bg-gray-800 dark:bg-opacity-80">
     <div className="container mx-auto px-4">
-      <article className="bg-white rounded-xl shadow-lg p-8 md:grid md:grid-cols-3 gap-10 items-start">
+      <article className="bg-white rounded-xl shadow-lg p-8 md:grid md:grid-cols-3 gap-10 items-start dark:bg-gray-800 dark:bg-opacity-80">
       <div className="flex justify-center md:justify-start">
         {/* Slight scale effect: 1.05 on mobile, 1.1 on desktop */}
         <div className="transform scale-[0.8] md:scale-[1.1] origin-top-left -mt-4 md:-mt-6 -mx-1 ml-16 md:ml-0">

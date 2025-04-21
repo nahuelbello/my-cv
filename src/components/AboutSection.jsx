@@ -1,9 +1,9 @@
 // About section: a quick intro and value proposition
 const AboutSection = () => {
   return (
-    <section id="about" className="py-4 rounded-t-xl bg-gray-50 dark:bg-gray-800">
+    <section id="about" className="py-4 rounded-t-xl bg-gray-50 dark:bg-gray-800 dark:bg-opacity-80">
       <div className="container mx-auto px-4">
-        <article className="bg-white dark:bg-gray-900 rounded-xl shadow-lg p-10 space-y-6">
+        <article className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-10 space-y-6">
           <header>
             <h2 className="text-3xl font-title font-semibold">Who I am and why would you hire me?</h2>
           </header>

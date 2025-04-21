@@ -3,9 +3,9 @@ import GitHubEmbed from '@/src/components/GitHubEmbed';
 
 const Experience = () => {
   return (
-    <section id="experience" className="py-8 md:py-16 bg-gray-50 dark:bg-gray-800">
+    <section id="experience" className="py-8 md:py-16 bg-gray-50 dark:bg-gray-800 dark:bg-opacity-80">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-      <article className="bg-white dark:bg-gray-900 rounded-xl shadow-lg p-6 md:p-10 space-y-8">
+      <article className="bg-white dark:bg-gray-800 dark:bg-opacity-80 rounded-xl shadow-lg p-6 md:p-10 space-y-8">
           <h2 className="text-2xl sm:text-3xl font-title font-semibold text-gray-900 dark:text-gray-100">
             Experience
           </h2>

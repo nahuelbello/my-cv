@@ -3,7 +3,7 @@
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-24 rounded-b-xl bg-white dark:bg-gray-900">
+    <section id="contact" className="py-24 rounded-b-xl bg-white dark:bg-gray-800 dark:bg-opacity-95">
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row items-center gap-8">
           <header className="text-center max-w-xl mx-auto mb-6">

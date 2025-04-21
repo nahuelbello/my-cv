@@ -1,9 +1,9 @@
 // Education section: showcase of formal training and academy program
 const Education = () => {
   return (
-    <section id="education" className="py-20 md:py-32 pb-16 md:pb-48 bg-gray-50 dark:bg-gray-800">
+    <section id="education" className="py-20 md:py-32 pb-16 md:pb-48 bg-gray-50 dark:bg-gray-800 dark:bg-opacity-80">
       <div className="container mx-auto px-4">
-          <article className="bg-white dark:bg-gray-900 rounded-xl shadow-lg p-8 flex flex-col md:flex-row items-center gap-8">
+          <article className="bg-white dark:bg-gray-800 dark:bg-opacity-80 rounded-xl shadow-lg p-8 flex flex-col md:flex-row items-center gap-8">
             {/* Logo */}
             <figure className="flex-shrink-0">
               <a
