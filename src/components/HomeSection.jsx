@@ -5,19 +5,19 @@ const HomeSection = () => {
   return (
     <section
       id="home"
-      className="relative bg-sky-200 py-20"
+      className="relative bg-sky-200 py-12 sm:py-20"
     >
-      <div className="container mx-auto px-4 flex flex-col md:flex-row items-center gap-12">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center gap-8 sm:gap-12">
         
         <figure className="md:w-1/2 w-full flex justify-center">
           <img
             src="/cv-picture.jpg" 
             alt="My Photo"
-            className="rounded-lg w-72 h-88 object-cover shadow-lg transition-transform transform hover:scale-105"
+            className="rounded-lg w-48 sm:w-72 h-auto object-cover shadow-lg transition-transform transform hover:scale-105"
           />
         </figure>
 
-        <div className="w-full bg-white bg-opacity-80 dark:bg-gray-800 dark:bg-opacity-80 p-10 mr-12 rounded-xl text-center md:text-left shadow-lg md:col-start-2">
+        <div className="w-full bg-white bg-opacity-80 dark:bg-gray-800 dark:bg-opacity-80 p-6 sm:p-10 rounded-xl text-center md:text-left shadow-lg">
           <h1 className="text-4xl md:text-7xl font-bold text-gray-900 dark:text-white">
             Nahuel Bello
           </h1>
@@ -28,7 +28,7 @@ const HomeSection = () => {
           Your business goal is my challenge. Let me help you build front‑end solutions that make a difference.
           </p>
           <nav aria-label="Social Links" className="mt-8">
-            <ul className="flex justify-center md:justify-start items-center gap-4 ml-80">
+            <ul className="flex justify-center md:justify-start md:ml-80 items-center gap-4">
               <li>
                 <a
                   href="mailto:contact@nahuelbello.com"

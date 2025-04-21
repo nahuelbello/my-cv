@@ -34,7 +34,7 @@ const GitHubEmbed = ({ fileUrl }) => {
   }, [fileUrl]);
 
   return (
-    <div className="max-h-96 overflow-y-auto rounded-lg shadow-lg">
+    <div className="w-full h-auto md:h-96 overflow-auto rounded-lg shadow-lg">
       <SyntaxHighlighter
         language={lang}
         style={oneDark}
