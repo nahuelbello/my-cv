@@ -27,7 +27,8 @@ const Education = () => {
                   <h2 className="text-3xl font-title font-semibold">Education</h2>
                 </header>
                 <p>
-                  Most of my web development training has been self‑taught, through trial and error and hands‑on experience in personal and freelance projects. I also enjoy watching YouTube tutorials or leveraging AI to solve specific challenges while learning on the go.
+                  Most of my web development training has been self‑taught, through trial and error and hands‑on experience in personal and freelance projects. I also enjoy watching 
+                  YouTube tutorials or leveraging AI to solve specific challenges while learning on the go.
                 </p>
                 <p>
                   I’m currently enrolled in a full‑stack web development master’s program at Conquer Blocks, regarded as the top Spanish‑speaking software academy. Visit their website{' '}

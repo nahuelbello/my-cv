@@ -28,7 +28,7 @@ const HomeSection = () => {
           Your business goal is my challenge. Let me help you build front‑end solutions that make a difference.
           </p>
           <nav aria-label="Social Links" className="mt-8">
-            <ul className="flex justify-center md:justify-start md:ml-80 items-center gap-4">
+            <ul className="flex justify-center md:justify-end items-center gap-4 w-full">
               <li>
                 <a
                   href="mailto:contact@nahuelbello.com"

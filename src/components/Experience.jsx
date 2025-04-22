@@ -10,10 +10,22 @@ const Experience = () => {
             Experience
           </h2>
 
-          <p className="text-gray-700 dark:text-gray-300 text-sm md:text-base">
-            I’ve worked on various freelance and personal projects, including web apps, Python scripts, automations, data cleaning, and blockchain dApps. My latest personal project, Message Auction, is an
-            Ethereum dApp where you can showcase your message while earning ETH rewards.
-          </p>
+          <div className="text-gray-700 dark:text-gray-300 text-sm md:text-base space-y-4">
+            <p>
+              I’ve worked on a variety of freelance and personal projects—web applications, Python scripts, automations, data cleaning tools, and blockchain dApps.
+            </p>
+            <p>
+              This site (nahuelbello.com) itself was built with Next.js and React, styled using Tailwind CSS with full dark‑mode support and optimized for performance through incremental static 
+              regeneration. During development, I tackled several technical challenges: crafting a fully responsive design without bloating the CSS codebase, resolving hydration mismatches between 
+              server‑ and client‑side rendering for dark mode, securely embedding GitHub code snippets in a scrollable container, and lazy‑loading the Message Auction iframe to improve initial 
+              load times. These were addressed by customizing Tailwind’s configuration for consistent theming, leveraging Next.js’s dynamic imports and Image component for asset optimization, 
+              and isolating third‑party embeds to prevent layout shifts. The result is a fast, accessible, and maintainable site.
+            </p>
+            <p>
+              Below you can see my last personal project, made 100% by myself (messageauction.com), followed by its main HTML code and then a link to the full GitHub repository. Message Auction,
+              is an Ethereum dApp where users can showcase custom messages while earning ETH rewards in real time:
+            </p>
+          </div>
 
           <figure className="flex justify-center mb-8 md:mb-12">
             <div className="w-full shadow-inner rounded-lg overflow-hidden">

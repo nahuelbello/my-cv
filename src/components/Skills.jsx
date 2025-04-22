@@ -26,7 +26,7 @@ const Skills = () => (
         </p>
         <p>
           Basic understanding of libraries, frameworks, languages and tools such
-          as React, Next.js, Tailwind, PostCSS, Shopify, Ethers and Solidity,
+          as React, Next.js, Tailwind, PostCSS, Shopify, Hardhat, Ethers and Solidity,
           among others.
         </p>
         <p>
